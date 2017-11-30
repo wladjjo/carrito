@@ -7,6 +7,8 @@
      	Editar orden
      	<a href="{{ route('products.index') }}" class="btn btn-primary pull-right">Listado</a>
      	</h2>
+
+        @include('products.fragment.error')
           
            {!! Form::model($product, ['route' => ['products.update', $product->id], 'method'=>'PUT']) !!}
               

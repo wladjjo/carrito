@@ -7,7 +7,20 @@
      	Listado
      	<a href="{{route('products.create')}}" class="btn btn-primary pull-right">Nuevo</a>
      	</h2>
-     	 
+
+
+     	 <div class="col-md-6 text-right">
+          <form action="{{ route('products.index') }}" method="GET" class="form-inline">
+              <div class="form-group">
+                  <input type="text" class="form-control" name="s" placeholder="Buscar...">
+              </div>
+              <div class="form-group"> 
+              <button class="btn btn-success" type="submit">Buscar</button>
+
+              </div>
+          </form>
+         </div>
+
            @include('products.fragment.info')
 
      	<table class="table table-hover table-striped">

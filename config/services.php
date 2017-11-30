@@ -35,4 +35,10 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
 
+    'facebook' => [
+    'client_id' => '1209826832484385',
+    'client_secret' => '533e88561f3aff17604f7c4af8203ff1',
+    'redirect' => 'http://localhost/crud/public/login/callback',
+],
+
 ];

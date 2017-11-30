@@ -6,6 +6,10 @@
           Nueva Orden
           <a href="{{ route('products.index') }}" class="btn btn-primary pull-right">Listado</a>
           </h2>
+
+            @include('products.fragment.error')
+
+
           
            {!! Form::open(['route' => 'products.store']) !!}
               

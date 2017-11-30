@@ -78,7 +78,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'es',
 
     /*
     |--------------------------------------------------------------------------
@@ -163,11 +163,12 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+       
 
         /*
          * Package Service Providers...
          */
-
+             
         /*
          * Application Service Providers...
          */
@@ -177,6 +178,8 @@ return [
         crud\Providers\EventServiceProvider::class,
         crud\Providers\RouteServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
+         Laravel\Socialite\SocialiteServiceProvider::class,
+        
 
     ],
 
@@ -227,7 +230,8 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'Form' => Collective\Html\FormFacade::class,
-      'Html' => Collective\Html\HtmlFacade::class,
+         'Html' => Collective\Html\HtmlFacade::class,
+         'Socialite' => Laravel\Socialite\Facades\Socialite::class,
 
 
     ],
